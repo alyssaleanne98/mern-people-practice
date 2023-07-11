@@ -1,6 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+// Import scss file to be source of styling
+import './styles.scss';
+//Import router
+import { BrowserRouter as Router } from "react-router-dom"
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
