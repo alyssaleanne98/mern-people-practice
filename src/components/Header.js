@@ -7,10 +7,11 @@
     // Inside the function body, you can see JSX syntax. JSX is an extension of JS that allows you to write HTML-like cdoe in your JS files. 
     // The return statement will simply return "component name".
     // Export: allows other parts of the application to import and use this component.
-function Component(prop) {
-    return <h1> Component name</h1>
+
+function Header(prop) {
+    return <h1> Header component</h1>
 
 
 }
 
-export default Component;
+export default Header;
