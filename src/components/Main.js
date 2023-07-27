@@ -6,14 +6,15 @@ import Show from "../pages/Show";
 
 
 function Main(props) {
-    return 
+    return (
     <main>
+    
         <Routes>
             <Route exact path="/" element={<Index />} />
             <Route path="/people/:id" element={<Show />} />
-
         </Routes>
     </main>
+    )
 }
 
 export default Main;
