@@ -65,3 +65,10 @@ export default Main;
     // function to create a new person
     // useEffect to make initial call for people list
     // pass the people state and the create function to index 
+
+        // Functionc component declaration
+            //`function Main (props)` declares a function component called 'Main' that can accept `properties` as its input. Props are used to pass data into components. 
+        // state and useState 
+            // `const [people, setPeople] = useState(null)` uses the `useState` hook to declare a piece of state called `people` and a function called `setPeople` to update that state. The initial value of `people` is set to null. WHY? 
+                // asynchronous data fetching: when your component is fetching data from an external source (like an API), there is a period of time during which the data is being fetched. Until its available, you might not want to display anything specific on the UI related to the data. 
+                // conditional rendering: to control what gets displayed based on the state of the data. for example, you might want to show a loading spinner while the data is being fetched, and then display the actual data once it's available. 

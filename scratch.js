@@ -13,4 +13,6 @@
                 // Index | Props: people, createPeople |
                // Route |path="/people/:id|"
                // Show |Props: people, updatePeople, deletePeople |
+
+
                
