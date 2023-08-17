@@ -72,3 +72,8 @@ export default Main;
             // `const [people, setPeople] = useState(null)` uses the `useState` hook to declare a piece of state called `people` and a function called `setPeople` to update that state. The initial value of `people` is set to null. WHY? 
                 // asynchronous data fetching: when your component is fetching data from an external source (like an API), there is a period of time during which the data is being fetched. Until its available, you might not want to display anything specific on the UI related to the data. 
                 // conditional rendering: to control what gets displayed based on the state of the data. for example, you might want to show a loading spinner while the data is being fetched, and then display the actual data once it's available. 
+
+    //URL and Fetch Functions:
+        // const URL = "http://localhost:3001/people/" defines the url that will be used to fetch and send data. 
+        // ` getPeople` fetches data from the defined URL, converts the response to JSON format, and updates the `people` state with the fetched data. 
+        // `createPeople` sends a POST request to create new people on the server. It then calls `getPeople` to update the list of people after creating a new entry. 
