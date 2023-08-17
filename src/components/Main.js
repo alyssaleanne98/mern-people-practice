@@ -77,3 +77,9 @@ export default Main;
         // const URL = "http://localhost:3001/people/" defines the url that will be used to fetch and send data. 
         // ` getPeople` fetches data from the defined URL, converts the response to JSON format, and updates the `people` state with the fetched data. 
         // `createPeople` sends a POST request to create new people on the server. It then calls `getPeople` to update the list of people after creating a new entry. 
+        // `useEffect` is a hook that runs side effects (such as fetching data) in function components. In this case, it's used to fetch the list of people when the component mounts (when it's first rendered)
+        // the empty array `[]` at the end of `useEffect` means that this effect will run only once, right after the component is mounted. (referring to the process of a component being created and inserted into the DOM for the first time)
+
+  // Return JSX: 
+      // the `return` statement defines the JSX (JS XML) that will be rendered by the component. 
+      // Inside JSX, the `Routes` and `Route` components are used to define routing for different URLs. When the URL matches a specified path, it renders the corresponding element. 
