@@ -9,18 +9,26 @@ import Show from "../pages/Show";
 
 function Main(props) {
   const [people, setPeople] = useState(null)
-
   const URL = "http://localhost:3001/people/"
 
   const getPeople = async () => {
     const response = await fetch(URL)
     const data = await response.json()
+    console.log(data)
     setPeople(data)
   }
 
   const createPeople = async (person) => {
-    // make post request to create people
+    await fetch(URL, {
+      method: "POST",
+      headers: {
+        "Content-Type": "Application/json"
+      },
+      body: JSON.stringify(person)
+    })
 
+    getPeople()
+    // make post request to create people
   }
 
   useEffect(() => {
